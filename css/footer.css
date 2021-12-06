@@ -1,0 +1,114 @@
+.footer{
+    background-color: rgb(0, 107, 168);
+    padding: 50px 5vw;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    color: rgb(231, 231, 231);
+}
+.footer .section .heading{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+.social-icons_footer a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.social-icons_footer a .fab, .social-icons_footer a .far{
+  line-height: 35px;
+}
+.social-icons_footer .gmail{
+  color: rgb(231, 231, 231);
+}
+.social-icons_footer .gmail:hover{
+  background: #e60c0c;
+  color: rgb(231, 231, 231);
+  transform: translateY(-5px) scale(1.1);
+}
+.social-icons_footer .fac{
+  color: rgb(231, 231, 231);
+}
+.social-icons_footer .fac:hover{
+  background: #0d0abd;
+  color: rgb(231, 231, 231);
+  transform: translateY(-5px) scale(1.1);
+}
+.social-icons_footer .twit{
+  color: rgb(231, 231, 231);
+}
+.social-icons_footer .twit:hover {
+  background: #3168ff;
+  color: rgb(231, 231, 231);
+  transform: translateY(-5px) scale(1.1);
+}
+.social-icons_footer .linked{
+  color: rgb(231, 231, 231);
+}
+.social-icons_footer .linked:hover {
+  background: #060057;
+  color: rgb(231, 231, 231);
+  transform: translateY(-5px) scale(1.1);
+}
+.social-icons_footer .inst{
+  color: rgb(231, 231, 231);
+}
+.social-icons_footer .inst:hover {
+  background: #e91e63;
+  color: rgb(231, 231, 231);
+  transform: translateY(-5px) scale(1.1);
+}
+
+.footer .section2 ul{
+    list-style: none;
+}
+.footer .section2 ul li{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.footer .section2 ul a{
+    color: rgb(231, 231, 231);
+}
+.footer .section3 .fas{
+    font-size: 28px;
+}
+.footer .section3 .address,
+.footer .section3 .phone,
+.footer .section3 .email{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+.footer .section3 .address span,
+.footer .section3 .phone span,
+.footer .section3 .email span{
+    margin-left: 40px;
+}
+
+.footer .row2{
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid rgb(0, 140, 255);
+}
+.footer .row2 .company_line{
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer .row2 .box_cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer .row2 .box_cont .box{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0px 20px;
+    border-right: 2px solid rgb(0, 140, 255);
+}

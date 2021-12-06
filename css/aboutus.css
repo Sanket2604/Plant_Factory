@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(196, 232, 253);
+}
+.aboutus{
+    margin-top: 100px;
+}
+.aboutus .row{
+    margin: 20px 5vw;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    margin-bottom: 25px;
+    transition: 0.5s ease-in;
+}
+.aboutus .row:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.aboutus .row .img_cont{
+    display: flex;
+    justify-content: center;
+}
+.aboutus .row .img_cont .img{
+    height: 250px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.aboutus .row .img_cont .img1{
+    background-image: url(../brand_icon.jpeg);
+    background-size: contain;
+}
+.aboutus .row .img_cont .img2{
+    background-image: url(../images/About/about1.jpg);
+}
+.aboutus .row .img_cont .img3{
+    background-image: url(../images/About/about2.jpg);
+}
+.aboutus .row .img_cont .img4{
+    background-image: url(../images/About/about3.jpg);
+}
+.aboutus .row .text_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-align: justify;
+}

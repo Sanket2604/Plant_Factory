@@ -1,0 +1,205 @@
+
+.carousel_1{
+    height: 500px;
+    margin-top: 70px;
+}
+.carousel_1 .slide{
+    height: 500px;
+}
+.carousel_1 .slide1{
+    background-image: url(../images/home_pg_pic1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel_1 .slide2{
+    background-image: url(../images/home_pg_pic2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel_1 .slide3{
+    background-image: url(../images/home_pg_pic3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel_1 .carousel-control-prev, .carousel-control-next{
+    transition: 0.5s ease-in-out;
+    color: rgba(255, 255, 255);
+}
+.carousel_1 .carousel-control-prev:hover{
+    animation: move_left 3s linear infinite normal forwards;
+    color:  green;
+}
+@keyframes move_left{
+    0%{
+        transform: translateX(0px);
+   }
+    50%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.carousel_1 .carousel-control-next:hover{
+    animation: move_right 3s linear infinite normal forwards;
+    color:  green;
+}
+@keyframes move_right{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.deals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.deals .heading{
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.deals .owl-carousel{
+    width: 92%;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item .item_cont{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    padding-bottom: 20px;
+}
+.item .item_cont:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+}
+
+.item .item_cont .img_zoom{
+    overflow: hidden;
+}
+.item .item_cont img{
+    height: 210px;
+    width: 100%;
+    transition: 0.75s ease-in-out;
+}
+
+.item .item_cont:hover img{
+    transform: scale(1.1);
+}
+.item .item_cont .title{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item .item_cont .title .prod{
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 70%;
+}
+.item .item_cont .title .weight{
+    color: rgb(82, 82, 82);
+}
+.item .item_cont .cost_sec{
+    width: 85%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.item .item_cont .cost_sec .qnt{
+    display: flex;
+}
+.item .item_cont .cost_sec .qnt .minus,
+.item .item_cont .cost_sec .qnt .value,
+.item .item_cont .cost_sec .qnt .plus{
+    padding: 5px 15px;
+    transition: 0.5s ease-in-out;
+}
+.item .item_cont .cost_sec .qnt .minus{
+    background-color: rgb(219, 219, 219);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+.item .item_cont .cost_sec .qnt .plus{
+    background-color: rgb(219, 219, 219);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.item .item_cont .cost_sec .qnt .minus:hover{
+    background-color: rgb(255, 96, 96);
+    color: white;
+}
+.item .item_cont .cost_sec .qnt .plus:hover{
+    background-color: #1fff6a;
+    color: white;
+}
+
+.prev-slide{
+  position: absolute;
+  left: 0px;
+  top: 45%;
+  background-color: green;
+}
+.prev-slide .fa-chevron-left,
+.next-slide .fa-chevron-right{
+    font-size: 32px;
+    color: green;
+    border: 2px solid black;
+}
+.next-slide{
+  position: absolute;
+  right: 0px;
+  top: 45%;
+  background-color: green;
+}
+
+@media only screen and (max-width: 577px){
+  
+  .prev-slide{
+    top: 45%;
+    font-size: 24px;
+    left: 0px;
+  }
+  .next-slide{
+    top: 45%;
+    font-size: 24px;
+    right: 0px;
+  }
+}
+@media only screen and (max-width: 450px){
+  
+  .prev-slide{
+    top: 45%;
+    font-size: 20px;
+    left: 20px;
+  }
+  .next-slide{
+    top: 45%;
+    font-size: 20px;
+    right: 20px;
+  }
+}

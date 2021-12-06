@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="brand_icon_tab.jpg" type="image/gif">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dc9678cfdb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Plant Factory Shopping</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html"></a>
+            <div class="menu-btn" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="transition: all .5s ease-in-out;">
+                <div class="menu-btn_burger" style="transition: all .5s ease-in-out;"></div>
+            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-lg-auto">
+                <a href="index.html">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <div class="line"></div>
+                    </li>
+                </a>
+                <a href="about.html">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                        <div class="line"></div>
+                    </li>
+                </a>
+                <a href="shop.html">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                        <div class="line"></div>
+                    </li>
+                </a>
+                <a href="contact.html">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                        <div class="line"></div>
+                    </li>
+                </a>
+                <a href="cart.html">
+                    <li class="nav-item">
+                        <div class="cart">
+                            <div class="cart_icon nav-link">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="item_counter" id="itemcounter">0</div>
+                        </div>
+                        <div class="line"></div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <div class="gototop">
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <div class="margin" id="1" style="height: 1px;"></div>
+    <div class="type_filter">
+        <a href="#1" class="category category1 active" onclick="addactive1()">
+            Vegetable
+            <div class="line">
+                <div class="section1">
+                    <div class="line1"></div>
+                </div>
+                <div class="section2">
+                    <div class="line2"></div>
+                </div>
+            </div>
+        </a>
+        <a href="#2" class="category category2" onclick="addactive2()">
+            Fruit
+            <div class="line">
+                <div class="section1">
+                    <div class="line1"></div>
+                </div>
+                <div class="section2">
+                    <div class="line2"></div>
+                </div>
+            </div>
+        </a>
+        <a href="#3" class="category category3" onclick="addactive3()">
+            Leafy
+            <div class="line">
+                <div class="section1">
+                    <div class="line1"></div>
+                </div>
+                <div class="section2">
+                    <div class="line2"></div>
+                </div>
+            </div>
+        </a>
+        <a href="#4" class="category category4" onclick="addactive4()">
+            More
+            <div class="line">
+                <div class="section1">
+                    <div class="line1"></div>
+                </div>
+                <div class="section2">
+                    <div class="line2"></div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="option option1">
+        <div class="heading">Vegetable</div>
+        <div class="veg_grid grid">
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/potato.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Potato</div>
+                    <div class="weight">500 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price" id="2"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">5</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="option">
+        <div class="heading">Fruits</div>
+        <div class="fruit_grid grid">
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/fruits.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Fruits</div>
+                    <div class="weight">1 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price" id="3"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 200</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="option">
+        <div class="heading">Leafy</div>
+        <div class="leaf_grid grid">
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/leafy.jpg" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Leafies</div>
+                    <div class="weight">250 grams</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price" id="4"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 400</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">10</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="option">
+        <div class="heading">More</div>
+        <div class="veg_grid grid">
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img_zoom">
+                    <img src="images/shop/seeds.png" alt="Image not loaded. Please refresh">
+                </div>
+                <div class="title">
+                    <div class="prod">Seeds(Pulses, Beans and Lentils)</div>
+                    <div class="weight">5 kg</div>
+                </div>
+                <div class="cost_sec">
+                    <div class="price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 10000</div>
+                    <div class="qnt">
+                        <div class="minus">-</div>
+                        <div class="value">100</div>
+                        <div class="plus">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="row row1">
+            <div class="col-12 col-md-5 section section1">
+                <img src="images/nav_logo.png" height="100px" alt="Plant Factory">
+                <div class="heading">Contact Us</div>
+                <div class="social-icons_footer">
+                    <a class="gmail" href="#"> <i class="far fa-envelope"></i></a>
+                    <a class="fac" href="#"> <i class="fab fa-facebook-f"></i></a>
+                    <a class="twit" href="#"> <i class="fab fa-twitter"></i></a>
+                    <a class="linked" href="#"> <i class="fab fa-linkedin-in"></i></a>
+                    <a class="inst" href="#"> <i class="fab fa-instagram"></i></a>            
+                </div>
+            </div>
+            <div class="col-12 col-md-3 section section2">
+                <div class="heading">Links:</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 section section3">
+                <div class="heading">Contact Information:</div>
+                <div class="address">
+                    <i class="fas fa-building "></i>
+                    <span>11, Ds Lane, Kumbarpet<br>
+                    Bangalore-560002<br>
+                    Karnataka, India</span>
+                </div>
+                <div class="phone"><i class="fas fa-phone-alt "></i><span>+91 9999999999</span></div>
+                <div class="email"><i class="fas fa-at "></i><span>contact@plantfactory.com</span></div>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="col-12 col-md-5">
+                <div class="company_line">Plant Factory © 2020 Copyright, All Rights Reserved</div>
+            </div>
+            <div class="col-12 col-md-7 box_cont">
+                <div class="box"><a href="">Company Information</a></div>
+                <div class="box"><a href="">Privacy Policy</a></div>
+                <div class="box"><a href="">Terms & Conditions</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/shop.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

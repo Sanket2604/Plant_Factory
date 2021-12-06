@@ -1,0 +1,157 @@
+body{
+    background-color: rgba(110, 255, 110, 0.2);
+}
+
+.type_filter{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    z-index: 4;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+}
+.type_filter.active{
+    background-color: rgba(255, 255, 255, 0.86);
+}
+.type_filter .category{
+    width: 20%;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+.type_filter .category.active{
+    color: darkgreen;
+}
+.type_filter .category .line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.type_filter .category .line .section1{
+    width: 50%;
+}
+.type_filter .category .line .section2{
+    width: 50%;
+}
+.type_filter .category .line .section1 .line1{
+    background-color: green;
+    height: 3px;
+    width: 0%;
+    transition: 0.5s ease-in-out;
+}
+.type_filter .category .line .section2 .line2{
+    background-color: green;
+    height: 3px;
+    width: 0%;
+    transition: 0.5s ease-in-out;
+}
+.type_filter .category.active .line .section1 .line1,
+.type_filter .category.active .line .section2 .line2{
+    width: 100%;
+}
+.type_filter .category:hover .line .section1 .line1,
+.type_filter .category:hover .line .section2 .line2{
+    width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.option .heading{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: 5vw;
+    font-size: 28px;
+    font-weight: 500;
+}
+.option1 .heading{
+    margin-top: 150px;
+}
+.option .grid .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    padding-bottom: 25px;
+}
+.option .grid .item:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+}
+.option .grid .item .img_zoom{
+    overflow: hidden;
+}
+.option .grid .item img{
+    height: 210px;
+    width: 100%;
+    transition: 0.75s ease-in-out;
+}
+.option .grid .item:hover img{
+    transform: scale(1.1);
+}
+.option .grid .item .title{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.option .grid .item .title .prod{
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 70%;
+}
+.option .grid .item .title .weight{
+    color: rgb(82, 82, 82);
+}
+.option .grid .item .cost_sec{
+    width: 85%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.option .grid .item .cost_sec .qnt{
+    display: flex;
+}
+.option .grid .item .cost_sec .qnt .minus,
+.option .grid .item .cost_sec .qnt .value,
+.option .grid .item .cost_sec .qnt .plus{
+    padding: 5px 15px;
+    transition: 0.5s ease-in-out;
+}
+.option .grid .item .cost_sec .qnt .minus{
+    background-color: rgb(219, 219, 219);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+.option .grid .item .cost_sec .qnt .plus{
+    background-color: rgb(219, 219, 219);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.option .grid .item .cost_sec .qnt .minus:hover{
+    background-color: rgb(255, 96, 96);
+    color: white;
+}
+.option .grid .item .cost_sec .qnt .plus:hover{
+    background-color: #1fff6a;
+    color: white;
+}

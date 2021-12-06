@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="brand_icon_tab.jpg" type="image/gif">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dc9678cfdb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Plant Factory Cart | Check Out</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html"></a>
+            <div class="menu-btn" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="transition: all .5s ease-in-out;">
+                <div class="menu-btn_burger" style="transition: all .5s ease-in-out;"></div>
+            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-lg-auto">
+                <a href="index.html">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <div class="line"></div>
+                    </li>
+                </a>
+                <a href="about.html">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                        <div class="line"></div>
+                    </li>
+                </a>
+                <a href="shop.html">
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                        <div class="line"></div>
+                    </li>
+                </a>
+                <a href="contact.html">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                        <div class="line"></div>
+                    </li>
+                </a>
+                <a href="cart.html">
+                    <li class="nav-item">
+                        <div class="cart">
+                            <div class="cart_icon nav-link">
+                                <i class="fas fa-shopping-cart" style="color: green;"></i>
+                            </div>
+                            <div class="item_counter" id="itemcounter">0</div>
+                        </div>
+                        <div class="line"></div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <div class="gototop">
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <div class="cart_cont">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div class="heading">Your Shopping Cart</div>
+                    <div class="item_headings">
+                        <div class="category">Product</div>
+                        <div class="category">Price</div>
+                        <div class="category">Quantity</div>
+                        <div class="category">TOTAL</div>
+                    </div>
+                    <div class="item-list">
+                        <div class="item">
+                            <div class="category prod_img_cont">
+                                <img src="images/spinach.jpg" height="100px" width="100px" alt="">
+                            </div>
+                            <div class="category prod_desc">Spinach (Palak) <span style="color: rgb(158, 158, 158);">250 grams</span></div>
+                            <div class="category price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 20</div>
+                            <div class="category quantity">
+                                <div class="qnt">
+                                    <div class="minus">-</div>
+                                    <div class="value">5</div>
+                                    <div class="plus">+</div>
+                                </div>
+                                <div class="remove_btn">Remove</div>
+                            </div>
+                            <div class="category total"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                        </div>
+                        <div class="item">
+                            <div class="category prod_img_cont">
+                                <img src="images/spinach.jpg" height="100px" width="100px" alt="">
+                            </div>
+                            <div class="category prod_desc">Spinach (Palak) <span style="color: rgb(158, 158, 158);">250 grams</span></div>
+                            <div class="category price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 20</div>
+                            <div class="category quantity">
+                                <div class="qnt">
+                                    <div class="minus">-</div>
+                                    <div class="value">5</div>
+                                    <div class="plus">+</div>
+                                </div>
+                                <div class="remove_btn">Remove</div>
+                            </div>
+                            <div class="category total"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                        </div>
+                        <div class="item">
+                            <div class="category prod_img_cont">
+                                <img src="images/spinach.jpg" height="100px" width="100px" alt="">
+                            </div>
+                            <div class="category prod_desc">Spinach (Palak) <span style="color: rgb(158, 158, 158);">250 grams</span></div>
+                            <div class="category price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 20</div>
+                            <div class="category quantity">
+                                <div class="qnt">
+                                    <div class="minus">-</div>
+                                    <div class="value">5</div>
+                                    <div class="plus">+</div>
+                                </div>
+                                <div class="remove_btn">Remove</div>
+                            </div>
+                            <div class="category total"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                        </div>
+                        <div class="item">
+                            <div class="category prod_img_cont">
+                                <img src="images/spinach.jpg" height="100px" width="100px" alt="">
+                            </div>
+                            <div class="category prod_desc">Spinach (Palak) <span style="color: rgb(158, 158, 158);">250 grams</span></div>
+                            <div class="category price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 20</div>
+                            <div class="category quantity">
+                                <div class="qnt">
+                                    <div class="minus">-</div>
+                                    <div class="value">5</div>
+                                    <div class="plus">+</div>
+                                </div>
+                                <div class="remove_btn">Remove</div>
+                            </div>
+                            <div class="category total"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                        </div>
+                        <div class="item">
+                            <div class="category prod_img_cont">
+                                <img src="images/spinach.jpg" height="100px" width="100px" alt="">
+                            </div>
+                            <div class="category prod_desc">Spinach (Palak) <span style="color: rgb(158, 158, 158);">250 grams</span></div>
+                            <div class="category price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 20</div>
+                            <div class="category quantity">
+                                <div class="qnt">
+                                    <div class="minus">-</div>
+                                    <div class="value">5</div>
+                                    <div class="plus">+</div>
+                                </div>
+                                <div class="remove_btn">Remove</div>
+                            </div>
+                            <div class="category total"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                        </div>
+                        <div class="item">
+                            <div class="category prod_img_cont">
+                                <img src="images/spinach.jpg" height="100px" width="100px" alt="">
+                            </div>
+                            <div class="category prod_desc">Spinach (Palak) <span style="color: rgb(158, 158, 158);">250 grams</span></div>
+                            <div class="category price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 20</div>
+                            <div class="category quantity">
+                                <div class="qnt">
+                                    <div class="minus">-</div>
+                                    <div class="value">5</div>
+                                    <div class="plus">+</div>
+                                </div>
+                                <div class="remove_btn">Remove</div>
+                            </div>
+                            <div class="category total"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                        </div>
+                        <div class="item">
+                            <div class="category prod_img_cont">
+                                <img src="images/spinach.jpg" height="100px" width="100px" alt="">
+                            </div>
+                            <div class="category prod_desc">Spinach (Palak) <span style="color: rgb(158, 158, 158);">250 grams</span></div>
+                            <div class="category price"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 20</div>
+                            <div class="category quantity">
+                                <div class="qnt">
+                                    <div class="minus">-</div>
+                                    <div class="value">5</div>
+                                    <div class="plus">+</div>
+                                </div>
+                                <div class="remove_btn">Remove</div>
+                            </div>
+                            <div class="category total"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="summary">
+        <div class="heading">ORDER SUMMARY</div>
+        <div class="item_count">
+            <div>
+                <span>Item: </span><span>5</span>
+            </div>
+            <div class="totaling"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+        </div>
+        <div class="shipping">
+            <label for="shipping">SHIPPING</label>
+            <select name="shipping" id="shipping">
+                <option value="Category1">Category1</option>
+                <option value="Category2">Category2</option>
+                <option value="Category3">Category3</option>
+                <option value="Category4">Category4</option>
+            </select>
+        </div>
+        <div class="total_cost">
+            <div class="heading">TOTAL COST</div>
+            <div class="cost"><i class="fas fa-rupee-sign" style="margin-right: 10px;"></i> 100</div>
+        </div>
+        <a href="" class="checkout"><span>CHECKOUT</span></a>
+    </div>
+    
+    <script src="js/nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
