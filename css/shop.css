@@ -96,11 +96,14 @@ body{
 }
 .option .grid .item .img_zoom{
     overflow: hidden;
+    width: 100%;
 }
 .option .grid .item img{
     height: 210px;
     width: 100%;
+    object-fit: cover;
     transition: 0.75s ease-in-out;
+    
 }
 .option .grid .item:hover img{
     transform: scale(1.1);
@@ -136,22 +139,43 @@ body{
     transition: 0.5s ease-in-out;
 }
 .option .grid .item .cost_sec .qnt .minus{
-    background-color: rgb(219, 219, 219);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     cursor: pointer;
+    background-color: rgb(255, 55, 55);
+    color: white;
 }
 .option .grid .item .cost_sec .qnt .plus{
-    background-color: rgb(219, 219, 219);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
-}
-.option .grid .item .cost_sec .qnt .minus:hover{
-    background-color: rgb(255, 96, 96);
+    background-color: #00e04b;
     color: white;
 }
-.option .grid .item .cost_sec .qnt .plus:hover{
-    background-color: #1fff6a;
+.option .grid .item .add_cart_btn{
+    margin-top: 20px;
+    padding: 5px 40px;
+    border: 1px solid green;
+    border-radius: 40px;
+    color: green;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.option .grid .item .add_cart_btn:hover{
     color: white;
+    border: 1px solid darkgreen;
+    background-color: darkgreen;
+    transform: scale(1.1);
+}
+.option .grid .item .add_cart_btn:hover .fa-shopping-cart{
+    transition: none;
+    animation: cart 1s infinite alternate linear;
+}
+@keyframes cart{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(5px);
+    }
 }
